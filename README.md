@@ -6,21 +6,26 @@ The One is a Chrome extension for that moment. You say who you are, once. On a L
 
 ## A night with it
 
-Set up once. Your key and your story stay in this browser.
+Three beats. Then you walk over.
 
-![Setup. An xAI key, and a short story about who you are.](screenshots/setup.png)
+<table>
+  <tr>
+    <td align="center" width="33%"><img src="screenshots/setup.png" width="180" alt="Set up once. An xAI key and who you are."></td>
+    <td align="center" width="33%"><img src="screenshots/the-question.png" width="180" alt="One question. Your biggest need right now."></td>
+    <td align="center" width="33%"><img src="screenshots/the-person.png" width="180" alt="The person. Their face, and why they are the one."></td>
+  </tr>
+  <tr>
+    <td align="center"><b>Once</b><br>Key and story. They stay in this browser.</td>
+    <td align="center"><b>Tonight</b><br>The one thing you need right now.</td>
+    <td align="center"><b>The person</b><br>Their face, the reason, how to find them.</td>
+  </tr>
+</table>
 
-Open the event. **Find the one** sits at the bottom left.
+On the event, **Find the one** waits at the bottom left.
 
-![The Find the one button on a Luma event page.](screenshots/on-the-event.png)
-
-One question. What do you need right now?
-
-![One field: your biggest need right now.](screenshots/the-question.png)
-
-Then their face. Why they are the one, how to spot them, and the links already on their profile.
-
-![The card. Their photo, why they fit, and how to find them in the room.](screenshots/the-person.png)
+<p align="center">
+  <img src="screenshots/on-the-event.png" width="420" alt="The Find the one button on a Luma event page.">
+</p>
 
 While it looks, two lines tell you where it is. The guest list counts people as they come in. Grok waits until that count is finished, then chooses one person.
 
