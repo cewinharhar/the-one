@@ -1,0 +1,245 @@
+:host,
+:host *,
+.theone-page,
+.theone-page * {
+  box-sizing: border-box;
+}
+
+:host {
+  all: initial;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  overflow: visible;
+  z-index: 2147483646;
+  pointer-events: none;
+  color: #f4efe6;
+  font-family: Palatino, "Iowan Old Style", "Palatino Linotype", serif;
+}
+
+.theone-page {
+  color: #f4efe6;
+  font-family: Palatino, "Iowan Old Style", "Palatino Linotype", serif;
+}
+
+.launch {
+  position: fixed;
+  left: 16px;
+  bottom: 16px;
+  z-index: 2147483646;
+  pointer-events: auto;
+  border: 0;
+  cursor: pointer;
+  background: #e36b3a;
+  color: #1a120e;
+  font-family: Palatino, "Iowan Old Style", serif;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  padding: 14px 18px;
+  border-radius: 999px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+.sheet {
+  position: fixed;
+  inset: 0;
+  z-index: 2147483646;
+  display: flex;
+  justify-content: center;
+  pointer-events: auto;
+  background: rgba(10, 8, 7, 0.72);
+}
+
+.sheet[hidden] {
+  display: none !important;
+}
+
+.panel {
+  width: min(100vw, 440px);
+  height: 100%;
+  overflow: auto;
+  background: #161311;
+  color: #f4efe6;
+  padding: 22px 22px 40px;
+  box-shadow: 0 0 0 1px rgba(243, 236, 223, 0.08);
+}
+
+.close {
+  position: sticky;
+  top: 0;
+  float: right;
+  border: 0;
+  background: transparent;
+  color: #f4efe6;
+  font: 22px/1 Palatino, serif;
+  cursor: pointer;
+  padding: 0 0 8px 12px;
+}
+
+.kicker {
+  margin: 28px 0 0;
+  font-family: "Arial Narrow", "Franklin Gothic Medium", sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #e36b3a;
+}
+
+h1,
+.name {
+  font-family: Impact, "Arial Narrow", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  line-height: 0.92;
+  margin: 8px 0 0;
+}
+
+h1 {
+  font-size: 52px;
+  max-width: 9ch;
+}
+
+.lede,
+.why,
+.spot,
+.error-copy,
+.status {
+  font-size: 20px;
+  line-height: 1.35;
+  margin: 16px 0 0;
+  overflow-wrap: break-word;
+}
+
+label {
+  display: block;
+  margin-top: 28px;
+  font-family: "Arial Narrow", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #d9cfc2;
+}
+
+textarea,
+input[type="password"],
+input[type="text"] {
+  display: block;
+  width: 100%;
+  margin-top: 8px;
+  border: 0;
+  border-bottom: 2px solid #e36b3a;
+  background: #221c18;
+  color: #f4efe6;
+  font: 18px/1.4 Palatino, serif;
+  padding: 12px;
+  resize: vertical;
+}
+
+textarea:focus,
+input:focus {
+  outline: 2px solid #e36b3a;
+  outline-offset: 2px;
+}
+
+.go,
+.save {
+  display: block;
+  width: 100%;
+  margin-top: 22px;
+  border: 0;
+  cursor: pointer;
+  background: #e36b3a;
+  color: #1a120e;
+  font-family: Impact, "Arial Narrow", sans-serif;
+  font-size: 28px;
+  letter-spacing: 0.02em;
+  padding: 14px 16px;
+}
+
+.go:disabled,
+.save:disabled {
+  cursor: wait;
+  opacity: 0.7;
+}
+
+.linkish {
+  display: inline-block;
+  margin-top: 18px;
+  background: none;
+  border: 0;
+  padding: 0;
+  color: #f4efe6;
+  font: 16px Palatino, serif;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.photo {
+  display: block;
+  width: calc(100% + 44px);
+  margin: 18px -22px 0;
+  aspect-ratio: 1;
+  object-fit: cover;
+  background: #3a241c;
+}
+
+.initials {
+  display: grid;
+  place-items: center;
+  font-family: Impact, sans-serif;
+  font-size: 96px;
+  color: #f4efe6;
+}
+
+.name {
+  font-size: 58px;
+  margin-top: 18px;
+}
+
+.section-label {
+  margin: 22px 0 0;
+  font-family: "Arial Narrow", sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #e36b3a;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 16px;
+  margin-top: 22px;
+}
+
+.links a {
+  color: #f4efe6;
+  font-family: "Arial Narrow", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+}
+
+.status,
+.step {
+  color: #d9cfc2;
+}
+
+.step {
+  margin-top: 6px;
+  font-size: 22px;
+  line-height: 1.3;
+}
+
+@media (max-width: 520px) {
+  .panel {
+    width: 100%;
+  }
+
+  h1,
+  .name {
+    font-size: 48px;
+  }
+}

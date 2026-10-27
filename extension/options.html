@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The One — setup</title>
+    <link rel="stylesheet" href="card.css" />
+    <link rel="stylesheet" href="options.css" />
+  </head>
+  <body class="theone-page">
+    <main class="panel">
+      <p class="kicker">The One</p>
+      <h1>Set up once.</h1>
+      <p class="lede">
+        Your key and your story stay in this browser. On a Luma event you were
+        accepted to, the only question left is what you need tonight.
+      </p>
+      <form id="setup">
+        <label for="apiKey">xAI API key</label>
+        <input id="apiKey" name="apiKey" type="password" autocomplete="off" required />
+        <label for="about">Who you are</label>
+        <textarea
+          id="about"
+          name="about"
+          rows="8"
+          required
+          placeholder="Your life, your startup, what you're up against, and what you usually need from people."
+        ></textarea>
+        <button class="save" type="submit">Save</button>
+        <p class="status" id="status" role="status"></p>
+      </form>
+    </main>
+    <script src="options.js"></script>
+  </body>
+</html>

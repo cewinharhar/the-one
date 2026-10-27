@@ -1,0 +1,5 @@
+.playwright/
+.playwright-mcp/
+node_modules/
+grok_api_key.txt
+template_projects/

@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "The One",
+  "version": "0.1.0",
+  "description": "Find the one person you have to talk to at a Luma event.",
+  "permissions": ["storage", "scripting"],
+  "host_permissions": [
+    "https://api.x.ai/*",
+    "https://luma.com/*",
+    "https://lu.ma/*",
+    "https://api.luma.com/*",
+    "https://api.lu.ma/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "The One setup"
+  },
+  "options_page": "options.html",
+  "content_scripts": [
+    {
+      "matches": ["https://luma.com/*", "https://lu.ma/*", "https://www.luma.com/*"],
+      "js": ["luma.js", "content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["card.css"],
+      "matches": ["https://luma.com/*", "https://lu.ma/*", "https://www.luma.com/*"]
+    }
+  ]
+}
